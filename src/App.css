@@ -28,12 +28,14 @@ h1 {
   font-family: 'Public Sans', sans-serif; ;
 }
 
-.button {
+.like-button {
   background: rgb(11, 212, 162);
   border: none;
-  padding: 1rem;
+  border-radius:5px;
+  padding: 10px;
   cursor: pointer;
   font-size: 1rem;
+  margin-left: 5px;
 }
 
 .liked {

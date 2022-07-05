@@ -13,8 +13,10 @@ function SongItem({ song, setSong, songs }) {
   }
   return (
     <>
+      <div className="display">
       <li className={`song-item ${song.like ? "like" : ""}`}>{song.name}</li>
-      <button onClick={handleLike}>like</button>
+      <button className='like-button' onClick={handleLike}>Like</button>
+      </div>
     </>
   );
 }
