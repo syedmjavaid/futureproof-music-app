@@ -16,7 +16,7 @@ function ArtistItem({ artist, setArtist, artists }) {
       <li className={`artist-item ${artist.like ? "like" : ""}`}>
         {artist.name}
       </li>
-      <button onClick={handleLike}>like</button>
+      <button className='like-button' onClick={handleLike}>Like</button>
     </>
   );
 }
