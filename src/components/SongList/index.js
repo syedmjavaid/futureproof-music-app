@@ -8,7 +8,7 @@ export default function SongList({ songs, setSong }) {
       <div>Songs</div>
       <ul>
         {songs.map((song) => (
-          <SongItem song={song} key={song.id} />
+          <SongItem song={song} songs={songs} setSong={setSong} key={song.id} />
         ))}
       </ul>
     </>
