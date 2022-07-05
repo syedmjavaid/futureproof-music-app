@@ -7,7 +7,12 @@ export default function ArtistList({ artists, setArtist }) {
       <div className="title">Artists</div>
       <ul className="text">
         {artists.map((artist) => (
-          <ArtistItem artist={artist} />
+          <ArtistItem
+            artist={artist}
+            setArtist={setArtist}
+            artists={artists}
+            key={artist.id}
+          />
         ))}
       </ul>
     </>
