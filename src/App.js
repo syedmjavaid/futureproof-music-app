@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import { ArtistList, SongList } from "./components";
+import { ArtistList, SongList, Lyric } from "./components";
 
 function App() {
   const [artists, setArtist] = useState([
@@ -12,22 +12,46 @@ function App() {
   ]);
 
   const [songs, setSong] = useState([
-    { name: "In my feelings", like: false, id: Math.random() * 1000 },
     {
-      name: "Ain't no sunshine when shes gone",
+      name: "In my feelings",
+      artist: "Drake",
       like: false,
       id: Math.random() * 1000,
     },
-    { name: "Dior", like: false, id: Math.random() * 1000 },
-    { name: "Crazy in love", like: false, id: Math.random() * 1000 },
-    { name: "Umbrella", like: false, id: Math.random() * 1000 },
+    {
+      name: "Ain't No Sunshine",
+      artist: "Bill Withers",
+      like: false,
+      id: Math.random() * 1000,
+    },
+    {
+      name: "Dior",
+      artist: "Pop Smoke",
+      like: false,
+      id: Math.random() * 1000,
+    },
+    {
+      name: "Crazy in love",
+      artist: "Beyonce",
+      like: false,
+      id: Math.random() * 1000,
+    },
+    {
+      name: "Umbrella",
+      artist: "Rihanna",
+      like: false,
+      id: Math.random() * 1000,
+    },
   ]);
+
+  const [songLyric, setSongLyric] = useState([]);
 
   return (
     <div className="App">
       <h1>Music App</h1>
       <ArtistList artists={artists} setArtist={setArtist} />
-      <SongList songs={songs} setSong={setSong} />
+      <SongList songs={songs} setSong={setSong} setSongLyric={setSongLyric} />
+      <Lyric songLyric={songLyric} />
     </div>
   );
 }

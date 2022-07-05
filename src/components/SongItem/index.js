@@ -1,6 +1,6 @@
 import React from "react";
 
-function SongItem({ song, setSong, songs }) {
+function SongItem({ song, setSong, songs, setSongLyric }) {
   function handleLike() {
     setSong(
       songs.map((el) => {
@@ -11,10 +11,14 @@ function SongItem({ song, setSong, songs }) {
       })
     );
   }
+  function handleLyricButton() {
+    setSongLyric([{ artist: song.artist, song: song.name }]);
+  }
   return (
     <>
       <li className={`song-item ${song.like ? "like" : ""}`}>{song.name}</li>
       <button onClick={handleLike}>like</button>
+      <button onClick={handleLyricButton}>Lyric</button>
     </>
   );
 }
