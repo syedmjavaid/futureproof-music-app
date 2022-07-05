@@ -1,7 +1,47 @@
-/* .App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+
+ body{
+  background-color: #ADD8E6;
+  
+ }
+ 
+ .App {
+  display:flex;
+  flex-direction:column;
+  justify-items: center;
+  align-items: center; 
 }
 
+h1 {
+  color: white;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+}
+
+.text{
+  font-family: 'Public Sans', sans-serif; ;
+}
+
+.like-button {
+  background: rgb(11, 212, 162);
+  border: none;
+  border-radius:5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.liked {
+  background-color: red;
+}
+/*
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,16 +53,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;

@@ -17,8 +17,12 @@ function SongItem({ song, setSong, songs, setSongLyric }) {
   return (
     <>
       <li className={`song-item ${song.like ? "like" : ""}`}>{song.name}</li>
-      <button onClick={handleLike}>like</button>
-      <button onClick={handleLyricButton}>Lyric</button>
+      <button className="like-button" onClick={handleLike}>
+        like
+      </button>
+      <button className="like-button" onClick={handleLyricButton}>
+        Lyric
+      </button>
     </>
   );
 }

@@ -47,6 +47,7 @@ function App() {
   const [songLyric, setSongLyric] = useState([]);
 
   return (
+
     <div className="App">
       <h1>Music App</h1>
       <ArtistList artists={artists} setArtist={setArtist} />

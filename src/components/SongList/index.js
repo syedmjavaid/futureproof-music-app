@@ -5,8 +5,8 @@ import SongItem from "../SongItem";
 export default function SongList({ songs, setSong, setSongLyric }) {
   return (
     <>
-      <div>Songs</div>
-      <ul>
+      <div className="title">Songs</div>
+      <ul className="text">
         {songs.map((song) => (
           <SongItem
             song={song}
